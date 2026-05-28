@@ -339,26 +339,4 @@ The pod uses these credentials to access S3.
 No long-lived keys. No secrets to manage. ✅
 
 
-⚠️ Common Issues
-Problem
-Likely Cause
-Fix
-AccessDenied on S3
-Wrong bucket name in policy
-Check s3-policy.json has the correct bucket ARN
-An error occurred (AuthFailure)
-OIDC provider not set up
-Re-run Step 2
-Service account has no role annotation
-eksctl create iamserviceaccount failed
-Check CloudFormation events in AWS Console
-Pod can't find credentials
-Wrong serviceAccountName in pod spec
-Make sure it matches exactly: s3-access-sa
 
-
-
-📚 Further Reading
-AWS IRSA Documentation
-eksctl Documentation
-EKS Best Practices — Security
